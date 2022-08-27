@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(149, 180, 149);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    text-decoration: blue underline;
+    font-size: 80px;
+    font-family: arial, futura, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h2 {
+    text-decoration: white underline solid;
+}
+
+a {
+    text-decoration: none;
+    /*this will remove underline from hyperlink word.*/
+}
+
+li {
+    line-height: 2;
+}
+
+h2 {
+    letter-spacing: 10px;
+}

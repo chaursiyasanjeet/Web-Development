@@ -1,0 +1,21 @@
+h2 {
+    color: #5FCFFC;
+    /*hexadecimal system of colors*/
+    background-color: rgb(89, 151, 0);
+    /*rgb colors system*/
+}
+
+button {
+    background-color: black;
+    /*Name color system*/
+    color: green
+}
+
+p {
+    color: chartreuse
+}
+
+body {
+    background-color: #c5e;
+
+}
