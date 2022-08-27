@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML tables</title>
+</head>
+
+<body>
+    <h1>HTML TABLES</h1>
+    <ul>
+        <li>Structure sets of data made up of row and columns.</li>
+        <li>To create a Table you will use 5-10 different element that will be tricky to remember</li>
+    </ul>
+    <h2>Grocery items</h2>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Pulses</th>
+                <th>Oils</th>
+                <th>Masala</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Masoor</td>
+                <td>Mustard</td>
+                <td>Turmeric</td>
+            </tr>
+            <tr>
+                <td>Moong</td>
+                <td>Refined oil</td>
+                <td>Cumins</td>
+            </tr>
+            <tr>
+                <td>Chana</td>
+                <td>Soya oil</td>
+                <td>Garam masala</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Table under the tables</h2>
+    <!--You have to use rowspan and colspan
+    in <th> to Define table under the 
+    tables-->
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Pulses</th>
+                <th rowspan="2">Oils</th>
+                <th colspan="2">Masala</th>
+            </tr>
+            <tr>
+                <th>Veg masala</th>
+                <th>Non veg Masala</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Masoor</td>
+                <td>Mustard</td>
+                <td>Turmeric</td>
+                <td>Chicken Masala</td>
+            </tr>
+            <tr>
+                <td>Moong</td>
+                <td>Refined oil</td>
+                <td>Cumins</td>
+                <td>Mutton Masala</td>
+            </tr>
+            <tr>
+                <td>Chana</td>
+                <td>Soya oil</td>
+                <td>Coriander</td>
+                <td>Garam Masala</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
