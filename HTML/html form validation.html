@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HTML validation demo</h1>
+    <form>
+        <label for="first">Enter your first name</label>
+        <input type="text" name="first" id="first" required>
+        <!--required element will pop up msg that this field is required-->
+
+        <P>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" minlength="5" maxlength=8 required>
+        </p>
+        <!--you can use minlength and maxlength for the no. of charcters-->
+
+        <p>
+            <label for="email">Enter email</label>
+            <input type="email" id="email" required>
+        </p>
+        <button>submit</button>
+    </form>
+
+</body>
+
+</html>

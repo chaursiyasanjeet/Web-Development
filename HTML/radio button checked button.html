@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Some extra buttons</title>
+</head>
+
+<body>
+    <h1>Checked Buttons</h1>
+    <form>
+        <input type="checkbox" name="agrr_t&s" id="agree" checked>
+        <!--You can type checkedd to aauto check buttton.-->
+        <label for="agree">I agree to t&s</label>
+    </form>
+    <h1>Radio buttoons</h1>
+    <form>
+        <label for="XS">XS</label>
+        <input type="radio" name="size" id="XS" valur="XS">
+        <label for="S">S</label>
+        <input type="radio" name="size" id="S" value="S">
+        <label for="M">M</label>
+        <input type="radio" name="size" id="M" value="M">
+    </form>
+    <p>
+        <label for="meal"> Please selct meal</label>
+        <select name="meal" id="meal">
+            <option value="fish" selected</option>fish</option>
+            <!--"from selected this will be auto selected"-->
+            <option value="Meat">meat</option>
+            <option value="Egg">Egg</option>
+        </select>
+    </p>
+    <h3>Range elemnts</h3>
+    <b> Use for amount</b>
+    <p>
+        <label for="Cheese">Amount of cheese</label>
+        <input type="range" id="cheese" min="1" max="10" name="cheese_label">
+    </p>
+    <button>sumbit</button>
+    <p>
+        <label for="Cheese">Amount of cheese</label>
+        <!--You can give value attribute to where to starts the scrool button -->
+        <!--You can add steps and by scrooling the button you will jump by that step value-->
+        <input type="range" id="cheese" min="1" max="10" value="5" steps="2" name="cheese_label">
+    </p>
+    <h3>Text area button</h3>
+    <ul>
+        <li>can be use for some feedback request</li>
+    </ul>
+    <P>
+        <label for="request">Any suggestion</label>
+        <textarea id="request" rows="10" name="request" placeholder="type your suggestion"></textarea>
+        <button>submit/button>
+    </P>
+
+
+
+</body>
+
+</html>
