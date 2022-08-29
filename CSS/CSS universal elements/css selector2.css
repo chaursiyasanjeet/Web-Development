@@ -1,0 +1,110 @@
+/*Attribute selector*/
+/*
+Style the specific attribute type
+*/
+input[type="password"] {
+    color: yellow;
+}
+
+a[href*="google"] {
+    color: pink;
+}
+
+
+/*Pseudo classes*/
+/*
+Key word addded to selector that specified a special state of the selected elements.
+*/
+
+/*Hover*/
+/*use for special effect when curser is on the elements.*/
+button:hover {
+    background-color: blue;
+}
+
+button:active {
+    background-color: green;
+}
+
+/*This will addeffect to nth elemet in document*/
+.post:nth-of-type(2n) {
+    background-color: #dfe8dc;
+}
+
+/*This will make change in each 2n post background-color.*/
+
+/*Pseudo Elements*/
+/*
+keyword used to style a particular part of selected element.
+use :: to indicate pseudo elements
+we can style like firs-lie,first-letter,first-paragraph etc.
+*/
+h2::first-letter {
+    font-size: 50px;
+    /*this will increase font-size of first letter of h2 elements.*/
+    color: black;
+}
+
+p::first-line {
+    color: blue;
+}
+
+p::selection {
+    background-color: yellow;
+    /*This will make yellow bg color when we will select paragraph.*/
+}
+
+/*The CSS cascade*/
+/*The order in which you style the same element is matters.
+like you have give h2 color pik first and then blue then the final color will be blue
+beacuse css apply first color but after first color css will recognize second color and apply it to your document.
+//The html will go to first link sheet and then go to second link sheet and overwrite the style if same element is style again.
+*/
+h2 {
+    color: rgba(174, 83, 27, 0.893);
+}
+
+/*SPECIFITY*/
+/*
+//If we style confilicting element then the browser will choose more specific elemt syled.
+
+//like p {color:yellow;} and selection p{color:teal;}-- 
+
+//In this style the  second will be more specific so the browser will go with the second one. and p out of section will get yellow color and p in the section will get teal color.
+
+//if you get stuck that which one is more specific then use
+specifity calculator(you ca also findd it online)
+put no. of id on 100s digit ,put no. of attributes,class and pseuod-classes on tenth digit,put element and pseuod -element on unit digit and compare them to get score which score more will be more specific.
+ex-0(id),0(class,pseuod-element),0(element,pseuos-class);
+
+ex-#submit{color:blue}-//It have 1(id),0(class),0(Element) so it score will be 100.
+ex-nav a.active{color:blue}-//It has 0(id),1(class),2(element) so it score will be 12.
+and the more specific will be first one.
+
+//
+/* Chrome tips
+//you can go in inspect element in chorme and you can see why my style is not applied
+//like some style is not prioritized then you can see that
+//And also you can code there in inspect part and you can preview them instantly
+*/
+
+/*Inline style is mostly priortized
+//you should avoid inline style in html.
+//once you style in inline then you can not edit in css.
+//So its better to avoid inline style because its create confusion.
+*/
+
+/*Important
+//if we add !importat element after style then that will be mostly prioritized by browser.
+*/
+button {
+    background-color: magenta !important;
+    /*from this all button color will be of magenta  irrespective of we style sumbit button by id that wil also not considered by browser.
+    //reference css selector line 21*/
+}
+
+/*CSS Inheritance
+//If soem element is build under some element and the parent element is style then that child element will also be styled
+ex- <body> <p> <ul> <li></li></ul></p></body>
+//In above syntex if we style body color then whole elemt will be styled this is call inhertiance.
+//if we style some element under element then that specific element will be style ad rest of the elemnt will copy the body style.

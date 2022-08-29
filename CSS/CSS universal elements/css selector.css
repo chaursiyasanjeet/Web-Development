@@ -1,0 +1,67 @@
+/*Univeral selector-It select everything on the page.
+* {
+    color: blue;
+}
+*/
+button {
+    /*some specific element select*/
+    font-size: 30px;
+}
+
+/* This is combining selector.
+you can comine and style the element. */
+h1,
+h2 {
+    color: magenta;
+}
+
+/*ID selector .
+if you want to style some specific id then you have
+to syle by #idname{ style spec}*/
+#signup {
+    background-color: black;
+    color: white;
+}
+
+/*CLASS selector
+for styling some class you have to use
+.classname{style spec}*/
+.tag {
+    background-color: black;
+}
+
+/*Descendent selctor
+like if you want to select element under the 
+some specific element will have some style
+for example:- link under p
+li elemt will have color black then you have to use this
+*/
+/* first_elemnt_name space second_elemet_name {
+    style spec}
+*/
+li a {
+    color: forestgreen;
+}
+
+/*ADJACENT SELCTOR
+If you wan to style the elemet that comes one after another element then you have to use this syntax:-
+first elemtn+second element{
+    style spec}
+    */
+h2+button {
+    background-color: magenta;
+    font: size 20px;
+
+}
+
+/*Direct child 
+used for direct descended of element.
+for example if we will footer>a all link that is 
+dirctly link to footer will be styled.
+if we footer a then link under li which is under footer will also be styled.
+ref see html document.
+only directly descendor of element will be styled, not the part of neasted element will be styled.
+*/
+footer>a {
+    color: black;
+}
