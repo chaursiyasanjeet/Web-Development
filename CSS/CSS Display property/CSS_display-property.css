@@ -1,0 +1,35 @@
+/*Display property
+INLINE->//Width and height are ignored.
+        //Margin anr padding push elemnts away horizantally but not vertically.
+BLOCK->//Block elements break the flow of a document.
+       //Width,height,margin& padding are respected.
+INLINE-BLOCK->//BEhave like an inline element except width,height ,margin .
+              //Padding are accepted.
+*/
+/*display:none -use for hide element in page*/
+h1 {
+    /*Block level elements
+    //After applysing display property inline it will bheave like inline element.
+    */
+    background-color: green;
+    border: 2px solid black;
+    display: inline;
+
+}
+
+span {
+    background-color: skyblue;
+    border: 1px solid black;
+    display: block;
+    /*This is inline element but will behave like block element after applying display property.*/
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    border: 5px solid black;
+    display: inline-block;
+    /*if you will use inline prooperty then widht and height will be block so use inline-block*/
+    margin: 50px;
+}

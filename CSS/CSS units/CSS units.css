@@ -1,0 +1,69 @@
+section {
+    background-color: blue;
+    width: 800px;
+    height: 800px;
+    display: none;
+}
+
+div {
+    background-color: black;
+    width: 50%;
+    /*This will take space of 50% of parent element i.e of sec.*/
+    height: 40%;
+    /*This will take space of 40% of parent element i.e of sec.*/
+    display: none;
+}
+
+#ems h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200%
+        /* it will relative to font-size so it is not always related to parent*/
+}
+
+#ems h2 {
+    font-size: 1em;
+    margin: 0.5em;
+}
+
+#ems h3 {
+    font-size: 1.5 em;
+}
+
+#ems article {
+    font-size: 20px;
+}
+
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: blue;
+    /* it will use em times of respective cpmputed font-size of the element so it will better to use the em unit.*/
+}
+
+#ems {
+    font-size: 15px;
+}
+
+/*Rems 
+//Rems is related to root html element font-size
+often easier to use.
+//if the root font-size is 20px ,then 2rem is always equal to 40px  if also use in nested elemnts unlike em always incrase size.
+//its better use in nested elements;
+you can see the difference between both of them in page.*/
+#ems ul {
+    font-size: 1.5em;
+}
+
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 1rem;
+}

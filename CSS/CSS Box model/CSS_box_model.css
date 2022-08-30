@@ -1,0 +1,79 @@
+div {
+    width: 200px;
+    /*You can adjust content width and height ,like box and desgin accordingly*/
+    height: 250px;
+    background-color: darkkhaki;
+    /*in this style div contel will tak of 200px width ad 500px height and the  background color will also be only on that area i.e 200*500 px*/
+}
+
+/* Border & Border radius.
+//use for desgin boarder around element 
+//There are different properties like border-width/border-style/border-color
+//you can desgin boarder in one line you have to simple use syntex in this way.
+border:width style color ;
+//You can use property like border-left-width/border-bottom-width/border-right-width/border-left-width.
+//use border-radius to give shape to the border
+use border radius in percentage that will be better.
+
+//there are several eamples:-
+*/
+
+#one {
+    background-color: rgb(97, 97, 186);
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    box-sizing: border-box;
+}
+
+#two {
+    background-color: rgb(102, 113, 122);
+    border-style: dotted;
+    border-width: 2px;
+    border-color: blue;
+    box-sizing: border-box;
+    border-bottom-width: 5px;
+
+}
+
+#three {
+    background-color: rgb(12, 46, 46);
+    border: 5px solid black;
+    border-radius: 10px 100px / 120px 90px
+}
+
+/* Padding 
+//space b/w boarder and actual content
+//there are several properties
+//Padding left/bottom/top/ right
+//short hand padding:
+paddig:10px;(add padding to all sides)
+padding:5px 10px;(add padding to vertical,horizontal)
+padding:1px 2px 3px;(add padding to top,horizontal,bottom)
+padding:5px 3px 2px 4px;(add padding to top,right,bottom,left)
+
+*/
+h1 {
+    background-color: pink;
+    width: 200px;
+    padding-left: 100px;
+    padding-right: 5px;
+    margin-bottom: 0px;
+}
+
+button {
+    padding: 30px 100px 60px 200px;
+}
+
+/*Margin
+//Space taken outside the element is margin.
+same like padding it have short hand property
+margin:10px;(add margin to all sides)
+margin:5px 10px;(add margin to vertical,horizontal)
+margin:1px 2px 3px;(add margin to top,horizontal,bottom)
+margin:5px 3px 2px 4px;(add margin to top,right,bottom,left)
+*/
+#one {
+    margin-left: 50px;
+    /*This will shift slightly left in the page*/
+}
