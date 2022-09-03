@@ -1,0 +1,63 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+
+
+}
+
+#middle {
+    background: green;
+}
+
+/*static position property
+//Element is positioned according to the normal flow of the document.
+//the top,bottom,left and right have no effect.
+*/
+#static #middle {
+    position: static;
+}
+
+/*Relative Property
+//The element is positioned according to the normal flow of document.
+//then offset relative to itself based on the values of top,right,bottomand left.
+//The offset does not effect the position of any other elements;thus the space given for the element in the page layout is the same.
+*/
+#relative #middle {
+    position: relative;
+    bottom: 100px;
+    left: -100px;
+}
+
+/*Absolute
+//The element is removed from the normal flow of document.
+//no space is created for the element in page layout.
+//It is positoned relative to its closest positioned ancestor ,if any;otherwise it is placed relative to the intial containing block.
+//Its final positon is determined by the values of top,bottom,right and left.
+*/
+#absolute {
+    position: relative;
+}
+
+#absolute #middle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/*Fixed
+//same as absolute but it is fixed according to the intial containing block eastblished by viewing of the page;
+//It has nothing relative to its ancestor or relative element.
+*/
+#fixed {
+    position: relative;
+}
+
+#fixed #middle {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}

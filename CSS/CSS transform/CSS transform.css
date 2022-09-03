@@ -1,0 +1,78 @@
+/*Transform
+//we can rotate ,skew,scale,translate using transform element.
+//It will apply on whole element including its content.
+//you can change the transformation-origin by syntax <transform-origin:bottom>
+*/
+h1 {
+    background-color: aqua;
+    border: 5px solid black;
+    color: #eae2b7;
+    padding: 0.7em;
+    width: 350px;
+    font-size: 1.8em;
+    margin: 20px auto;
+    font-family: courier new;
+    font-weight: lighter;
+
+}
+
+h1:nth-of-type(2n) {
+    background-color: #e9c46a;
+
+}
+
+h1:nth-of-type(3n) {
+    background-color: #f4a261;
+
+}
+
+h1:nth-of-type(4n) {
+    background-color: #e76f51;
+}
+
+section:first-of-type h1:nth-of-type(1) {
+    transform-origin: bottom;
+    transform: rotate(90deg)
+        /*You can rotate using this element
+    //you can also rotate along axis using rotatex(),rotatey(),rotatez(),rotate3d()
+    */
+}
+
+section:first-of-type h1:nth-of-type(2) {
+    transform: scale(2);
+    /*you can grow or shrink the size of element
+    //you can also scale along axis using scalex(),scaley()
+    //you can also use both at same time by following syntex <scale(widhth, height)>
+   */
+}
+
+section:first-of-type h1:nth-of-type(3) {
+    transform: translate(200px);
+    /*You can traslate the element.
+    //you can translate along the axis also transalete(x-axia,y-axis)
+    //you can also use seprate to translate along axis <translatex(),translatey()>
+    */
+}
+
+section:first-of-type h1:nth-of-type(4) {
+    transform: skew(30deg);
+    /* you can skew i.e you make 2d effect in element
+    //You can skew along x-axis and y-axis
+    //you can do both at time also skew(x,y)
+    */
+}
+
+section:first-of-type h1:nth-of-type(4) {
+    transform: skew(30deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(4) {
+    /*you can also use all transform tool in one line as follows.*/
+    transform: rotate(90deg) scale(2) translate(300px);
+
+}
+
+section:nth-of-type(2) {
+    transform: scale(0.5);
+    /*This will scale whole section part of the document.*/
+}
