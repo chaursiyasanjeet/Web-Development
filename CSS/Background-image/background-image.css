@@ -1,0 +1,25 @@
+/*Background-image
+
+//use for background image
+//Bckground-size->size of image ex-if you want cover whole image then use contain and if you want to cover full psace then use cover
+//Background-position->From where the image wil be use in background like if you will use bottom then the background image will coverfrom bottom side.
+//no-repeat->if you dont want to repeat the image.
+//shorthand property->you can use them in one line by using space and order doesn't matters.
+//Only bakground-size will be included immediately after the backgorund-positon seprated with /.-> position/size
+//if you want to use multiple background then you can apply them by using comma you can see in 18 no. line how a bg-color and image is used.
+*/
+section {
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+    /*background-image: url("https://images.unsplash.com/photo-1662215507780-c7cfb6f30b17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
+    background-size: cover;
+    background-position: bottom;*/
+    background: no-repeat url("https://images.unsplash.com/photo-1657214059233-5626b35eb349?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80") center/60%, green;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+
+}

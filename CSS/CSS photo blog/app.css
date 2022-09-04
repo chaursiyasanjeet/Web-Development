@@ -1,0 +1,15 @@
+img {
+    width: 30%;
+    /* margin: 1.6666%;*/
+    margin: calc(10%/6);
+    /*as 10% space left so we divide equally into 6 parts to provide equal margins*/
+}
+
+nav {
+    text-transform: uppercase;
+    border-bottom: 5px solid green;
+    width: 30%;
+    margin-left: calc(10%/6);
+    /*it will be inline to the photo otherwise it will more left to the photo.*/
+    padding: 20px 0;
+}
