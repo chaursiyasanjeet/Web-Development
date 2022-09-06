@@ -1,0 +1,85 @@
+body {
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+nav {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul,
+li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+/*media queries
+//used for responsive page desgin. like the page in open in phone and desktop then the page will be auto adjust according the viewport.
+//exact-width ->You can give exact width when the page changes.
+//@media(width:300px)->at exact 300px the page desgin will change but this is not a good practice,so we use min-width,max-width.
+//min-width->min width require to change the page view.
+//max-width->after max-width the page view ill be change.
+//you can also combine and can set range using and.
+//you can select multiple element in flow.
+*/
+
+
+
+
+/*@media(min-width:600px) and (max-width:800px) {
+    h1 {
+        color: red;
+    }
+}
+
+
+@media(min-width:800px) {
+    h1 {
+        color: blue;
+    }
+
+
+
+@media(orientation:landscape) {
+    body {
+        background-color: magenta;
+        ;
+    }
+}*/
+@media(max-width:768px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    /*This will asign the ul in column upto 768px screen-size.*/
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*@media(max-width:576px) {
+    h1 {
+        font-size: 2em;
+    }
+}*/

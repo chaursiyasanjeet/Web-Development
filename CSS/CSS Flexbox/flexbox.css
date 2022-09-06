@@ -1,0 +1,101 @@
+/*CSS flex
+//The element behaves like a block element and lays out its content according to the flexbox model.
+//There are two axis in css flex box horizontally it is called main-axis and verically it is called cross axis.
+//Deafult it will be inline-block form left to right.
+//But you can change follow using tag flex-direction.
+//flex-direction:row-reverse(this will dipaly the block in from right ot left)
+//flex-direction:column(this will dipaly the block from top to bottom.)
+//flex-direction:column-reverse(this will dipaly the block from bottom to top.)
+*/
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    /* now it will be display as inline-block element.*/
+    flex-direction: row;
+
+    /*Justify-content->this is alignment property for flex.
+    //property defines how the browser distributes space between and around items along the main-axis of a flex container.
+    //justify-conten:start <This will make no effect.
+    //justify-content: center;<This will centre the content in container>.
+    //justify-content: space-between;<This will distribute the space between the items evenly not outside only between the items.>
+    //justify-content: space-around;<Distribute space around the items along with the outside>
+    //justify-content: space-evenly;<Distribute space evenly around and outside the items>
+     */
+
+    justify-content: center;
+
+    /*align-items
+    //This align default from top to bottom.
+    //property defines how the browser distributes space between and around items along the cross-axis of a flex container.
+    //It has same aligment properties like justify-content.
+    //align-item:baseline;(This will align item according to some baseline for ex-if some text in div then all the div will be aligned in line to text.
+    */
+
+    align-items: flex-start;
+
+    /*Flex wrap
+    //This property sets whether item are forced onto one line or can wrao onto mutiple lines.if wrapping is allowed it sets the direction that lines are stacked.
+    //flex-wrap:nowrap;(no wrap)
+    //flex-wrap:wrap;(wrapping allowed)
+    //flex-wrap:wrap-revrse;(wrapping in reverse order)
+    //for ex you have set a width of 90px in one line and there are 5 div of 20px each then if wrapping is not allowed then it will fit into one line but if allowed then the 5th div will shift to next line.
+    */
+
+    flex-wrap: nowrap;
+
+    /*align-content:this property manage space between row and columns when flex wrap is applied if not then this property will do nothing.
+    //align-content: center;(This will place whole contetn in centre.
+    */
+    align-content: flex-start;
+}
+
+#container div {
+    width: 100px;
+    height: 100px;
+
+    /*Flex-sizing properties
+//there are three different porperties it apply along main-axis c
+//flex-basis->It defines the intial size of the each elment before the space is distributed.
+//flex-grow->This will take all additionl space left in container.//This is unitless number.//It work in proportion like if you alot 1 and 2 in other div then the double of the space taken by first div will be take by second div.
+//flex-shrink->If items are larger than container they shrink according to felx-shrink.//it unit will decide that how much it fast shrink respect to other.//0 means no shrink i.e that element will not shrink.
+*/
+    flex-basis: 400px;
+}
+
+/*align-self
+    //This property use for alignment of flex items along the cross axis.
+    */
+
+div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+div:nth-of-type(5) {
+    /*align-self: flex-end;*/
+    flex-shrink: 0;
+}
+
+div:nth-of-type(2) {
+    align-self: flex-start;
+    flex-grow: 1;
+}
+
+/*Flex-sizing shorthand
+//flex:flex-grow flex-shrink flex-basis
+//you can use two value or one vlaue browser will understaand according to unit.
+*/
