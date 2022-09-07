@@ -1,0 +1,12 @@
+body {
+    background-color: blue;
+}
+
+section {
+    background-color: white;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
