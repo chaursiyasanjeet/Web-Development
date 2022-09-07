@@ -1,12 +1,117 @@
 body {
-    background-color: blue;
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-section {
+.price-plan-table {
     background-color: white;
-    width: 90%;
-    height: 50%;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.price-plan {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+
+.price-plan:last-child {
+    border-bottom: none;
+}
+
+.price-img {
+    margin-bottom: 25px;
+    max-width: 100%
+}
+
+.price-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.price-feature {
+    margin: 50px 0 25px;
+    color: #016ff9;
+}
+
+.price-feature-items {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+    line-height: 1.5;
+}
+
+.price-feature-items:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.price {
+    color: blue;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.price-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    padding: 15px 35px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+
+}
+
+.price-button:hover,
+.price-button:focus {
+    background-color: #e1f1ff;
+
+}
+
+.price-button.is-featured {
+    background-color: #48aaff;
+    color: white;
+
+}
+
+.price-button.is-featured:hover,
+.price-button.is-featured:focus {
+    background-color: #269aff;
+    color: white;
+
+}
+
+@media(min-width:900px) {
+    .price-plan-table {
+        flex-direction: row;
+    }
+
+    .price-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+
+    .price-plan:last-child {
+        border-right: none;
+    }
 }
