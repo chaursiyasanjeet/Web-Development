@@ -1,4 +1,4 @@
-//Function
+/*//Function
 
 //Defining function
 function singSong() {
@@ -146,4 +146,4 @@ try {
     hello.toUpperCase();
 } catch {
     console.log("Error!!!!!!")
-}
+}*/
