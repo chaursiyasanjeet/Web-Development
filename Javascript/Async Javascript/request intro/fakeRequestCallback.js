@@ -1,3 +1,4 @@
+/*
 const fakeRequestCallback = (url, success, failure) => {
     const delay = Math.floor(Math.random() * 4500) + 500;
     setTimeout(() => {
@@ -34,3 +35,4 @@ fakeRequestCallback("books.com/page1", (response) => {
             console.log("ERROR (2nd req)!!", err)
         })
 }, () => console.log("ERROR!!"))
+*/
